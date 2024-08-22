@@ -1,0 +1,53 @@
+# 1.Efetuar a soma dos números 5 e 10 e imprimir o resultado.
+print(5+10)
+
+# 2.Efetuar a soma de três números digitados pelo usuário e imprimir o resultado.
+num1 = int(input('Digite um número:'))
+num2 = int(input('Digite outro:'))
+num3 = int(input('Digite mais um:'))
+print(num1 + num2 + num3)
+
+# 3.Efetuar a multiplicação de dois números digitados pelo usuário e imprimir o resultado.
+num1 = int(input('Digite um número:'))
+num2 = int(input('Digite outro:'))
+print(num1*num2)
+
+# 4.Calcular o aumento que será dado a um funcionário, obtendo do usuário as seguintes informações:
+#   salário atual e a porcentagem de aumento. Apresentar o novo valor do salário e o valor do aumento.
+num1 = int(input('salário atual:'))
+num2 = int(input('aumento salarial(em porcentagem):'))
+m = (num1*(1+num2/100))
+a = (num1*(num2/100))
+print(f'O salário atual é:R$:{m:.2f}, e o valor aumentado é de R$:{a:.2f}')
+
+# 5.Converter uma quantidade de horas digitadas pelo usuário em minutos. Informe o resultado em minutos.
+num1 = int(input('Digite o número de horas:'))
+m = (num1*60)
+print(f'{num1} horas equivalem a {m} minutos')
+
+# 6.Calcular o salário líquido do funcionário sabendo que este é constituído pelo
+#   salário bruto mais o valor das horas extras
+#   subtraindo 8% de INSS do total.
+#   Serão lidos nesse problema o salário bruto, o valor das horas extras e o número de horas extras.
+#   Apresentar ao final o salário líquido.
+num1 = int(input('Digite o valor de seu salário:'))
+num2 = int(input('Digite o valor de suas horas extras:'))
+num3 = int(input('Digite quantas horas extras foram feitas:'))
+bruto = (num1+(num2*num3))
+liquido = (bruto*0.92)
+print(f'O seu ganho líquido foi de R$:{liquido:.2f}')
+
+# 7.Efetuar a leitura do número de quilowatts consumidos e calcular o valor a ser pago de energia elétrica,
+#   sabendo-se que o valor a pagar por quilowatt é de 0,12.
+#   Apresentar o valor total a ser pago pelo usuário acrescido de 18% de ICMS.
+num1 = int(input('Número de quilowatts consumidos:'))
+m1 = (num1*0.12)
+m2 = (m1*1.18)
+print(f'O valor total a ser pago é de R$:{m2:.2f}')
+
+# 8.Calcular a média de combustível gasto pelo usuário,
+#   sendo informado a quantidade de quilômetros rodados e a quantidade de combustível consumido.
+num1 = int(input('Digite o número de Km rodados:'))
+num2 = int(input('Digite a quantidade de combustível consumido:'))
+m = (num1/num2)
+print(f'Foram gastos {m:.2f} L/Km')
