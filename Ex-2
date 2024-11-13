@@ -1,0 +1,5 @@
+# 2.Efetuar a soma de três números digitados pelo usuário e imprimir o resultado.
+num1 = int(input('Digite um número:'))
+num2 = int(input('Digite outro:'))
+num3 = int(input('Digite mais um:'))
+print(num1 + num2 + num3)
