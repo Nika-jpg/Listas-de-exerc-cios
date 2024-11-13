@@ -1,2 +1,4 @@
-# 1.Efetuar a soma dos números 5 e 10 e imprimir o resultado.
-print(5+10)
+# 1.Efetuar a leitura de uma nota e, se o valor for maior ou igual a 60, imprimir na tela "APROVADO".
+num = int(input('Digite sua nota:'))
+if num >= 60:
+    print('APROVADO')
