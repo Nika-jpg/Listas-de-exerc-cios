@@ -1,0 +1,30 @@
+# 14.Desenvolva um algoritmo que leia o nome de um aluno, suas notas em 2 provas e em um trabalho
+#    (todas com valores entre 0 e 10) e sua frequência, definindo e imprimindo se ele foi aprovado,
+#    reprovado ou se fará prova final. O aluno será reprovado se faltou mais de 15 aulas.
+#    Será aprovado se não for reprovado por falta e sua média for maior que 6,0.
+#    Caso tenha média menor, deverá fazer prova final.
+#    O cálculo da média deve ser feito com peso 3 para a primeira prova,5 para a segunda prova e 2 para o trabalho.
+Nome = input('Digite o nome do aluno:')
+nota1 = float(input('Digite a primeira nota: '))
+while 0 > nota1 or nota1 > 10:
+    print('nota invalida')
+    nota1 = float(input('Digite a primeira nota: '))
+nota2 = float(input('Digite a segunda nota: '))
+while 0 > nota2 or nota2 > 10:
+    print('nota invalida')
+    nota2 = float(input('Digite a segunda nota: '))
+trabalho = float(input('Digite a nota do trabalho: '))
+while 0 > trabalho or trabalho > 10:
+    print('nota do trabalho invalida')
+    trabalho = float(input('Digite a nota do trabalho: '))
+faltas = int(input('Digite o número de faltas: '))
+while 0 > faltas:
+    print('número de faltas inválido')
+    faltas = int(input('Digite o número de faltas:'))
+if faltas > 15:
+    print(f'O aluno {Nome} foi reprovado por excesso de faltas, possuindo {faltas}')
+notafinal = (nota1*3 + nota2*5 + trabalho*2)/10
+if notafinal > 6:
+    print(f'O aluno {Nome} foi aprovado com média {notafinal:.1f}')
+if notafinal < 6:
+    print(f'O aluno {Nome} deve fazer prova final, pois ficou com média {notafinal:.1f}')
