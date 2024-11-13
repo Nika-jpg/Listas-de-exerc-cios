@@ -1,0 +1,6 @@
+# 8.Calcular a média de combustível gasto pelo usuário,
+#   sendo informado a quantidade de quilômetros rodados e a quantidade de combustível consumido.
+num1 = int(input('Digite o número de Km rodados:'))
+num2 = int(input('Digite a quantidade de combustível consumido:'))
+m = (num1/num2)
+print(f'Foram gastos {m:.2f} L/Km')
