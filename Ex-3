@@ -1,0 +1,4 @@
+# 3.Efetuar a multiplicação de dois números digitados pelo usuário e imprimir o resultado.
+num1 = int(input('Digite um número:'))
+num2 = int(input('Digite outro:'))
+print(num1*num2)
