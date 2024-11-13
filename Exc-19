@@ -1,0 +1,11 @@
+# 19.Faça um algoritmo que transforme a nota de um aluno em conceito. As notas 10 e 9 receberão conceito A,
+#    as notas 8 e 7 receberão conceito B, as notas 6 e 5 receberão conceito C e abaixo de 5 conceito D.
+nota = int(input('Digite a nota: '))
+if 9 <= nota <= 10:
+    print('Conceito A')
+if 7 <= nota <= 8:
+    print('Conceito B')
+if 5 <= nota <= 6:
+    print('Conceito C')
+if nota < 5:
+    print('Conceito D')
