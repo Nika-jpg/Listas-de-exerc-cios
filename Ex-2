@@ -1,5 +1,6 @@
-# 2.Efetuar a soma de três números digitados pelo usuário e imprimir o resultado.
-num1 = int(input('Digite um número:'))
-num2 = int(input('Digite outro:'))
-num3 = int(input('Digite mais um:'))
-print(num1 + num2 + num3)
+# 2.Efetuar a leitura de uma nota e, se o valor for maior ou igual a 60, imprimir na tela "APROVADO",
+#   se for menor, imprimir reprovado.
+num = int(input('Digite sua nota:'))
+if num >= 60:
+    print('APROVADO')
+else: print('REPROVADO')
