@@ -1,0 +1,8 @@
+# 10.Faça um algoritmo que receba o valor do salário de uma pessoa e o valor de um financiamento pretendido.
+#    Caso o financiamento seja menor ou igual a 5 vezes o salário da pessoa,
+#    o algoritmo deverá escrever "Financiamento Concedido"; senão, ele deverá escrever "Financiamento Negado".
+s = float(input('Qual o valor do seu salário?'))
+f = (float(input('Qual o valor do seu financiamento?')))
+if f <= 5*s:
+    print('Financiamento Concedido!')
+else: print('Financiamento Negado.')
