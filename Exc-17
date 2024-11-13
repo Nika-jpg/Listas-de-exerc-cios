@@ -1,0 +1,18 @@
+# 17.Uma encomenda de unidades de disco contém unidades marcadas com um código de 1 a 4,
+#    que indica o tipo seguinte:(está no word)
+#    Escreva um programa que receba o número de um código como entrada e, baseado no valor digitado,
+#    informe o tipo correto de unidade de disco.
+codigo = int(input('Digite o código:'))
+if codigo == 1:
+    print('CD-ROM (700MB)')
+    exit()
+if codigo == 2:
+    print('DVD-ROM (4.7GB)')
+    exit()
+if codigo == 3:
+    print('DVD-9 (8.54 GB)')
+    exit()
+if codigo == 4:
+    print('Blu-Ray (25 GB)')
+    exit()
+else: print('Código inválido')
