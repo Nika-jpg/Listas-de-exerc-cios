@@ -1,7 +1,9 @@
-# 7.Efetuar a leitura do número de quilowatts consumidos e calcular o valor a ser pago de energia elétrica,
-#   sabendo-se que o valor a pagar por quilowatt é de 0,12.
-#   Apresentar o valor total a ser pago pelo usuário acrescido de 18% de ICMS.
-num1 = int(input('Número de quilowatts consumidos:'))
-m1 = (num1*0.12)
-m2 = (m1*1.18)
-print(f'O valor total a ser pago é de R$:{m2:.2f}')
+# 7.Faça a leitura do salário atual e do tempo de serviço de um funcionário.
+#   A seguir, calcule o seu salário reajustado.
+#   Funcionários com até 1 ano de empresa, receberão aumento de 10%.
+#   Funcionários com mais de um ano de tempo de serviço, receberão aumento de 20%.
+num1 = int(input('Digite o seu salário atual:'))
+num2 = int(input('Digite o seu tempo de serviço em anos:'))
+if num2 <= 1:
+    print(f'O seu salário é de R$:{num1*1.1:.2f}')
+else: print(f'O seu salário é de R$:{num1*1.2:.2f}')
