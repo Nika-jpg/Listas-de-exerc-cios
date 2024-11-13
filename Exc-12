@@ -1,0 +1,16 @@
+# 12.A taxa de juros aplicada em fundos depositados em um banco é determinada pelo tempo em que estes ficam
+#    depositados. Para um banco em particular, a seguinte tabela é usada:(está no word)
+#    Usando esta informação, escreva um programa que receba o tempo em que os fundos foram mantidos em depósito
+#    e informe a taxa de juros correspondente
+t = float(input('Digite o tempo em anos que os fundos foram mantidos em depósito: '))
+if t >= 5:
+    print('Os juros são de: 0,95')
+elif t >= 4:
+    print('Os juros são de: 0,90')
+elif t >= 3:
+    print('Os juros são de: 0,85')
+elif t >= 2:
+    print('Os juros são de: 0,75')
+elif t >= 1:
+    print('Os juros são de: 0,65')
+else: print('Os juros são de: 0,55')
