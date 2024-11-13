@@ -1,7 +1,5 @@
-# 4.Calcular o aumento que será dado a um funcionário, obtendo do usuário as seguintes informações:
-#   salário atual e a porcentagem de aumento. Apresentar o novo valor do salário e o valor do aumento.
-num1 = int(input('salário atual:'))
-num2 = int(input('aumento salarial(em porcentagem):'))
-m = (num1*(1+num2/100))
-a = (num1*(num2/100))
-print(f'O salário atual é:R$:{m:.2f}, e o valor aumentado é de R$:{a:.2f}')
+# 4.Ler um número inteiro e informar se o número lido é par ou impar.
+num1 = int(input('Digite um número:'))
+if num1 % 2 == 0:
+    print('Par')
+else: print('Ímpar')
