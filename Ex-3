@@ -1,4 +1,12 @@
-# 3.Efetuar a multiplicação de dois números digitados pelo usuário e imprimir o resultado.
-num1 = int(input('Digite um número:'))
-num2 = int(input('Digite outro:'))
-print(num1*num2)
+# 3.Efetuar a leitura de uma nota e, se o valor for maior ou igual a 60, imprimir na tela "APROVADO", se for menor,
+#   imprimir reprovado. Testar ainda se o valor lido foi maior do que 100 ou menor do que zero.
+#   Neste caso, imprimir "NOTA INVÁLIDA".
+num = int(input('Digite sua nota:'))
+if num > 100:
+    print('NOTA INVÁLIDA')
+elif num >= 60:
+    print('APROVADO')
+if num < 0:
+    print('NOTA INVÁLIDA')
+elif num < 60:
+    print('REPROVADO')
