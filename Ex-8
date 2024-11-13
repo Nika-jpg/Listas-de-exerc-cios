@@ -1,6 +1,16 @@
-# 8.Calcular a média de combustível gasto pelo usuário,
-#   sendo informado a quantidade de quilômetros rodados e a quantidade de combustível consumido.
-num1 = int(input('Digite o número de Km rodados:'))
-num2 = int(input('Digite a quantidade de combustível consumido:'))
-m = (num1/num2)
-print(f'Foram gastos {m:.2f} L/Km')
+# 8.Faça a leitura do ano atual e do ano de nascimento de uma pessoa e exibir sua idade.
+#   A seguir, informe se a pessoa é bebê (0 a 3 anos), criança (4 a 11 anos), adolescente (12 a 17 anos),
+#   adulta (18 a 64 anos) ou idosa (65 anos em diante).
+num1 = int(input('Qual o ano atual?'))
+num2 = int(input('Em que ano você nasceu?'))
+s = num1 - num2
+if s <= 3:
+    print('Bebê')
+elif s <= 11:
+    print('Criança')
+elif s <= 17:
+    print('Adolescente')
+elif s <= 64:
+    print('Adulto')
+elif s >= 65:
+    print('Idoso')
