@@ -1,0 +1,11 @@
+# 6.Calcular o salário líquido do funcionário sabendo que este é constituído pelo
+#   salário bruto mais o valor das horas extras
+#   subtraindo 8% de INSS do total.
+#   Serão lidos nesse problema o salário bruto, o valor das horas extras e o número de horas extras.
+#   Apresentar ao final o salário líquido.
+num1 = int(input('Digite o valor de seu salário:'))
+num2 = int(input('Digite o valor de suas horas extras:'))
+num3 = int(input('Digite quantas horas extras foram feitas:'))
+bruto = (num1+(num2*num3))
+liquido = (bruto*0.92)
+print(f'O seu ganho líquido foi de R$:{liquido:.2f}')
