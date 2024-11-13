@@ -1,0 +1,23 @@
+# 20.Desenvolva um algoritmo para que, dados dois valores inteiros entre 1 e 10 lidos, calcule e imprima:
+#    a média dos números caso a soma deles for menor que 8, seu produto caso a soma seja igual a 8
+#    ou a divisão do maior pelo menor caso a soma dos valores for maior que 8.
+num1 = int(input('Digite o primeiro numero: '))
+while num1 > 10 or num1 < 1:
+    print('Número inválido.')
+    num1 = int(input('Digite o primeiro numero: '))
+num2 = int(input('Digite o segundo numero: '))
+while num2 > 10 or num2 < 1:
+    print('Número inválido.')
+    num2 = int(input('Digite o segundo numero: '))
+if num2 > num1:
+    maior = num2
+    menor = num1
+if num1 > num2:
+    maior = num1
+    menor = num2
+if num1+num2 < 8:
+    print((num1+num2)/2)
+if num1+num2 == 8:
+    print(num1*num2)
+if num1+num2 > 8:
+    print(maior/menor)
