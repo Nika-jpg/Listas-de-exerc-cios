@@ -1,0 +1,4 @@
+# 5.Converter uma quantidade de horas digitadas pelo usuário em minutos. Informe o resultado em minutos.
+num1 = int(input('Digite o número de horas:'))
+m = (num1*60)
+print(f'{num1} horas equivalem a {m} minutos')
