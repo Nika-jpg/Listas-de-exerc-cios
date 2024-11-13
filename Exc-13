@@ -1,0 +1,22 @@
+# 13.Baseado no ano e peso do modelo de um automóvel, o estado de Nova Jersey determina
+#    a sua classe de peso e taxa de registro usando a seguinte tabela:(está no word)
+#    Usando esta informação, escreva um programa que receba o ano e o peso do modelo de um automóvel
+#    e calcule e imprima a classe de peso e a taxa de registro para o carro.
+num1 = float(input('Qual o ano do seu carro?'))
+num2 = float(input('Qual o peso do seu carro?'))
+if num1 <= 1970:
+    if num2 < 1200:
+        print('O veículo pertence a classe 1 de peso e a taxa de registro é de R$:16,50')
+    elif num2 <= 1700:
+        print('O veículo pertence a classe 2 de peso e a taxa de registro é de R$:25,50')
+    else: print('O veículo pertence a classe 3 de peso e a taxa de registro é de R$:46,50')
+elif num1 <= 1979:
+    if num2 < 1200:
+        print('O veículo pertence a classe 4 de peso e a taxa de registro é de R$:27,00')
+    elif num2 <= 1700:
+        print('O veículo pertence a classe 5 de peso e a taxa de registro é de R$:30,50')
+    else: print('O veículo pertence a classe 6 de peso e a taxa de registro é de R$:52,50')
+else:
+    if num2 < 1600:
+        print('O veículo pertence a classe 7 de peso e a taxa de registro é de R$:19,50')
+    else: print('O veículo pertence a classe 8 de peso e a taxa de registro é de R$:55,50')
